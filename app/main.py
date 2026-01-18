@@ -1,7 +1,5 @@
 
-from fastapi import FastAPI
-from analyzer import analyze_text
-
+from app.analyzer import analyze_text
 app = FastAPI(title="CognitiveTrap - AI Deception Detector")
 
 @app.post("/analyze")
